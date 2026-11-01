@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Patriarca | People Operations & Talent Acquisition Lead</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#F7F6F2',
+              surface: '#FFFFFF',
+              charcoal: '#1A1A1A',
+              muted: '#666666',
+              accent: '#E04E27',
+              accentHover: '#C93F1B',
+              accentLight: '#FDF2EE',
+              border: '#E8E6DF'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F7F6F2;
+      color: #1A1A1A;
+    }
+    .badge-accent {
+      background-color: #FDF2EE;
+      color: #E04E27;
+      border: 1px solid rgba(224, 78, 39, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal antialiased selection:bg-brand-accent selection:text-white">
+
+  <!-- Sticky Glassmorphism Header -->
+  <header id="navbar" class="sticky top-0 z-50 bg-[#F7F6F2]/90 backdrop-blur-md border-b border-brand-border/70 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-brand-charcoal hover:text-brand-accent transition-colors flex items-center gap-2">
+        <span class="w-8 h-8 rounded-full bg-brand-charcoal text-white flex items-center justify-center font-extrabold text-xs">ZP</span>
+        <span>Zen Patriarca</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-brand-muted">
+        <a href="#work" class="hover:text-brand-accent transition-colors">Case Studies</a>
+        <a href="#stack" class="hover:text-brand-accent transition-colors">Tech Stack</a>
+        <a href="#experience" class="hover:text-brand-accent transition-colors">Experience</a>
+        <a href="#testimonials" class="hover:text-brand-accent transition-colors">Testimonials</a>
+        <a href="#about" class="hover:text-brand-accent transition-colors">About & Context</a>
+        <a href="#credentials" class="hover:text-brand-accent transition-colors">Credentials</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center space-x-3">
+        <a href="https://zenpatriarca.com/zen-patriarca-resume.pdf" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-brand-border bg-white text-brand-charcoal hover:border-brand-accent hover:text-brand-accent transition-all shadow-sm">
+          Résumé ↓
+        </a>
+        <button id="bookCallBtnNav" class="px-4 py-1.5 text-xs font-semibold rounded-lg bg-brand-accent text-white hover:bg-brand-accentHover transition-all shadow-sm flex items-center gap-1.5">
+          <span>Book Call</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-brand-charcoal hover:bg-white border border-brand-border" aria-label="Toggle Navigation">
+        <svg id="menuIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pt-2 pb-6 bg-[#F7F6F2] border-b border-brand-border space-y-3 text-sm font-medium">
+      <a href="#work" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">Case Studies</a>
+      <a href="#stack" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">Tech Stack</a>
+      <a href="#experience" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">Experience</a>
+      <a href="#testimonials" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">Testimonials</a>
+      <a href="#about" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">About & Context</a>
+      <a href="#credentials" class="block py-2 text-brand-charcoal hover:text-brand-accent mobile-link">Credentials</a>
+      <div class="pt-3 flex items-center gap-3">
+        <a href="https://zenpatriarca.com/zen-patriarca-resume.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 text-center text-xs font-semibold rounded-lg border border-brand-border bg-white text-brand-charcoal">
+          Résumé ↓
+        </a>
+        <button id="bookCallBtnMobile" class="flex-1 py-2 text-center text-xs font-semibold rounded-lg bg-brand-accent text-white">
+          Book Call
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="pt-14 pb-20 md:pt-20 md:pb-28">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Executive Value Proposition -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-accent text-xs font-semibold tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+              <span>Available for Global Remote Leadership & People Ops</span>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-brand-accent font-semibold text-sm uppercase tracking-wider">People Operations & Talent Acquisition Lead</p>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-charcoal leading-[1.1]">
+                Zen Patriarca
+              </h1>
+            </div>
+
+            <p class="text-lg md:text-xl text-brand-muted leading-relaxed max-w-2xl font-normal">
+              Scaling global remote-first teams through high-impact talent acquisition, streamlined HR operations, and automated people systems. Proven track record supporting 80+ distributed team members across tech and creative scale-ups.
+            </p>
+
+            <!-- Key Action CTAs -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <button id="bookCallBtnHero" class="px-6 py-3 rounded-xl bg-brand-accent text-white font-semibold text-sm hover:bg-brand-accentHover transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                <span>Book a Screening Call</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+              <a href="https://zenpatriarca.com/zen-patriarca-resume.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white text-brand-charcoal font-semibold text-sm border border-brand-border hover:border-brand-accent hover:text-brand-accent transition-all shadow-sm flex items-center gap-2">
+                <span>Download Full Résumé</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              </a>
+              <a href="#work" class="px-4 py-3 text-sm font-semibold text-brand-muted hover:text-brand-accent transition-colors flex items-center gap-1">
+                <span>Explore Case Studies</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+            </div>
+
+            <!-- Quantitative Impact Highlights -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-brand-border">
+              <div class="p-4 bg-white/70 rounded-xl border border-brand-border/60 shadow-sm">
+                <p class="text-2xl md:text-3xl font-extrabold text-brand-charcoal">15+</p>
+                <p class="text-xs text-brand-muted font-medium mt-1">Years in People & Talent</p>
+              </div>
+              <div class="p-4 bg-white/70 rounded-xl border border-brand-border/60 shadow-sm">
+                <p class="text-2xl md:text-3xl font-extrabold text-brand-charcoal">80+</p>
+                <p class="text-xs text-brand-muted font-medium mt-1">Remote Team Supported</p>
+              </div>
+              <div class="p-4 bg-white/70 rounded-xl border border-brand-border/60 shadow-sm">
+                <p class="text-2xl md:text-3xl font-extrabold text-brand-charcoal">300+</p>
+                <p class="text-xs text-brand-muted font-medium mt-1">Global Scale Hires</p>
+              </div>
+              <div class="p-4 bg-white/70 rounded-xl border border-brand-border/60 shadow-sm">
+                <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">75%</p>
+                <p class="text-xs text-brand-muted font-medium mt-1">Faster Payroll Prep</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Profile & System Card -->
+          <div class="lg:col-span-5">
+            <div class="bg-white rounded-2xl border border-brand-border shadow-xl p-6 md:p-8 relative overflow-hidden space-y-6">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-brand-accent/5 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+
+              <div class="flex items-start justify-between">
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Executive Overview</span>
+                  <h2 class="text-xl font-bold text-brand-charcoal mt-1">Zen Patriarca</h2>
+                  <p class="text-xs text-brand-muted">Angeles City, Pampanga, Philippines · Remote Global</p>
+                </div>
+                <div class="w-12 h-12 rounded-xl bg-brand-accentLight text-brand-accent font-bold text-lg flex items-center justify-center">
+                  ZP
+                </div>
+              </div>
+
+              <!-- Quick Verification Signals -->
+              <div class="space-y-3 text-xs">
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-brand-cream/60 border border-brand-border/50">
+                  <span class="font-medium text-brand-charcoal">Current Role</span>
+                  <span class="font-semibold text-brand-accent">HR Ops & TA Manager (Chargeflow)</span>
+                </div>
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-brand-cream/60 border border-brand-border/50">
+                  <span class="font-medium text-brand-charcoal">Global English Score</span>
+                  <span class="font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">C2 Proficient (SmallTalk 2025)</span>
+                </div>
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-brand-cream/60 border border-brand-border/50">
+                  <span class="font-medium text-brand-charcoal">Core Focus</span>
+                  <span class="font-semibold text-brand-charcoal">US & APAC Remote Tech / Contractors</span>
+                </div>
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-brand-cream/60 border border-brand-border/50">
+                  <span class="font-medium text-brand-charcoal">Verified Social Proof</span>
+                  <span class="font-semibold text-brand-charcoal">11 Recommendations (CEOs & Leads)</span>
+                </div>
+              </div>
+
+              <!-- Direct Contact Quick Links -->
+              <div class="pt-2 border-t border-brand-border flex items-center justify-between text-xs">
+                <a href="mailto:patriarcazen@gmail.com" class="text-brand-charcoal hover:text-brand-accent font-medium flex items-center gap-1.5 transition-colors">
+                  <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  <span>patriarcazen@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/zenpatriarca/" target="_blank" rel="noopener noreferrer" class="text-brand-charcoal hover:text-brand-accent font-medium flex items-center gap-1 transition-colors">
+                  <span>LinkedIn ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section (Selected Work) -->
+    <section id="work" class="py-20 bg-white border-y border-brand-border">
+      <div class="max-w-6xl mx-auto px-6 space-y-16">
+        
+        <div class="max-w-2xl space-y-3">
+          <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Proven Impact & Case Studies</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-brand-charcoal tracking-tight">
+            Selected Work: Systems, Strategy & Sourcing
+          </h2>
+          <p class="text-brand-muted text-base leading-relaxed">
+            Concrete evidence of how I architect people systems and scale talent pipelines for growing distributed organizations.
+          </p>
+        </div>
+
+        <!-- Case Study 1: HR Operations (HRIS Architecture & Automation) -->
+        <article class="p-8 md:p-10 rounded-2xl bg-brand-cream border border-brand-border shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border pb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-brand-charcoal text-white">Case Study 01</span>
+                <span class="text-xs font-semibold text-brand-accent bg-brand-accentLight px-2.5 py-1 rounded border border-brand-accent/20">HR Operations & People Systems</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-brand-charcoal mt-2">
+                Distributed HRIS & Workforce Automation Engine
+              </h3>
+              <p class="text-sm text-brand-muted mt-1">Chargeflow, Inc. · Supporting 80+ Remote Team Members across US & APAC</p>
+            </div>
+            <div class="text-left md:text-right">
+              <span class="text-xs font-medium text-brand-muted block">Role & Scope</span>
+              <span class="text-xs font-bold text-brand-charcoal">System Architect & Operations Lead</span>
+            </div>
+          </div>
+
+          <!-- Problem & Solution Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                <span>The Operational Challenge</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                A high-velocity distributed contractor workforce relied on fragmented spreadsheets, isolated messaging threads, and manual time sheets. With no unified system of record, attendance and shift scheduling caused frequent confusion, overtime and payroll calculations took 3+ business days to audit, and routine requests created major administrative bottlenecks for HR.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>The Operational Solution</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Architected and deployed a centralized cloud-based HRIS integrating time tracking, leave management, weekly shift scheduling, structured approvals, and executive payroll reporting. Designed role-based permissions, automated approval routing, and self-service dashboards to eliminate HR dependency and ensure audit-ready compliance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive 6-Module Architecture Grid -->
+          <div class="space-y-4 pt-4 border-t border-brand-border">
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal">
+                Core Architecture: Six Connected Functional Modules
+              </h4>
+              <span class="text-xs text-brand-muted font-medium">Click a module to inspect functionality</span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3" id="moduleGrid">
+              <button class="module-btn p-3 rounded-xl border border-brand-accent bg-white text-left transition-all shadow-sm" data-mod="0">
+                <span class="text-xs font-bold text-brand-accent block">01</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Central Dashboard</span>
+              </button>
+              <button class="module-btn p-3 rounded-xl border border-brand-border bg-white/70 hover:bg-white text-left transition-all" data-mod="1">
+                <span class="text-xs font-bold text-brand-muted block">02</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Time Tracking</span>
+              </button>
+              <button class="module-btn p-3 rounded-xl border border-brand-border bg-white/70 hover:bg-white text-left transition-all" data-mod="2">
+                <span class="text-xs font-bold text-brand-muted block">03</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Leave Management</span>
+              </button>
+              <button class="module-btn p-3 rounded-xl border border-brand-border bg-white/70 hover:bg-white text-left transition-all" data-mod="3">
+                <span class="text-xs font-bold text-brand-muted block">04</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Shift Scheduler</span>
+              </button>
+              <button class="module-btn p-3 rounded-xl border border-brand-border bg-white/70 hover:bg-white text-left transition-all" data-mod="4">
+                <span class="text-xs font-bold text-brand-muted block">05</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Approvals Engine</span>
+              </button>
+              <button class="module-btn p-3 rounded-xl border border-brand-border bg-white/70 hover:bg-white text-left transition-all" data-mod="5">
+                <span class="text-xs font-bold text-brand-muted block">06</span>
+                <span class="text-xs font-bold text-brand-charcoal block mt-1">Payroll & Analytics</span>
+              </button>
+            </div>
+
+            <!-- Dynamic Module Detail Panel -->
+            <div id="moduleDetail" class="p-4 rounded-xl bg-white border border-brand-border text-xs text-brand-muted leading-relaxed">
+              <strong class="text-brand-charcoal block mb-1">Central Dashboard & Executive Visibility</strong>
+              Provides real-time visibility into active on-duty remote team members, pending time/leave approvals, schedule conflicts, and payroll preparation status for executive stakeholders.
+            </div>
+          </div>
+
+          <!-- Hard Business Metrics -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-brand-border">
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">75% Faster</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Payroll Cycle Reduction</p>
+              <p class="text-xs text-brand-muted mt-0.5">Reduced manual reconciliation from 3 business days to under 4 hours.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">90% Less</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Routine Admin Tickets</p>
+              <p class="text-xs text-brand-muted mt-0.5">Self-service time, leave, and shift swap workflows eliminated HR inbox delays.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">100% On-Time</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Discrepancy-Free Payroll</p>
+              <p class="text-xs text-brand-muted mt-0.5">Zero payroll calculation errors across 12 consecutive monthly cycles for 80+ staff.</p>
+            </div>
+          </div>
+
+          <div class="text-xs text-brand-muted bg-white/60 p-3 rounded-lg border border-brand-border/60">
+            <strong class="text-brand-charcoal">Tech Stack & Methodology:</strong> Cloud Database Platform · API-driven Time Logging · Automated CSV Payroll Export Pipeline · Role-Based Access Controls (RBAC) · Shift Swapping Logic.
+          </div>
+        </article>
+
+        <!-- Case Study 2: Talent Acquisition (Recruiting Engine & Pipeline Scaling) -->
+        <article class="p-8 md:p-10 rounded-2xl bg-brand-cream border border-brand-border shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border pb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-brand-charcoal text-white">Case Study 02</span>
+                <span class="text-xs font-semibold text-brand-accent bg-brand-accentLight px-2.5 py-1 rounded border border-brand-accent/20">Global Talent Acquisition</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-brand-charcoal mt-2">
+                High-Velocity Global Recruiting Engine & Candidate Experience
+              </h3>
+              <p class="text-sm text-brand-muted mt-1">55 KNOTS & Bluestone Servicing · Scaling Creative & Engineering Headcount</p>
+            </div>
+            <div class="text-left md:text-right">
+              <span class="text-xs font-medium text-brand-muted block">Role & Scope</span>
+              <span class="text-xs font-bold text-brand-charcoal">Talent Acquisition Lead</span>
+            </div>
+          </div>
+
+          <!-- Problem & Solution Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                <span>The Sourcing & Hiring Challenge</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                The agency and technical teams faced rapid client growth requiring immediate headcount expansion across specialized creative roles (multimedia designers, UI/UX creatives) and technical talent (QA leads, developers). Sourcing was ad-hoc, interview loops were unstructured, and prolonged hiring cycles caused candidate drop-off in a competitive market.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>The Structured Sourcing Solution</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Built ongoing passive talent pipelines via targeted multi-channel sourcing, standardized ATS interview stages (Ashby/Greenhouse), and introduced objective role-based scorecards to align hiring managers. Implemented a rigorous 48-hour feedback SLA to maintain positive candidate engagement from initial reachout to written offer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hard Business Metrics -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-brand-border">
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">24 Days</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Average Time-to-Hire</p>
+              <p class="text-xs text-brand-muted mt-0.5">Reduced candidate cycle time from 45 days while maintaining rigorous hiring standards.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">94%</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Offer Acceptance Rate</p>
+              <p class="text-xs text-brand-muted mt-0.5">High close rate achieved through transparent compensation alignment and swift turnaround.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">88%</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">1-Year Retention Rate</p>
+              <p class="text-xs text-brand-muted mt-0.5">High quality-of-hire verified through strong post-placement performance evaluations.</p>
+            </div>
+          </div>
+
+          <div class="text-xs text-brand-muted bg-white/60 p-3 rounded-lg border border-brand-border/60">
+            <strong class="text-brand-charcoal">Recruiting Tech & Workflow:</strong> ATS Optimization (Ashby / Greenhouse) · LinkedIn Recruiter · Structured Behavioral Interviews · Candidate Relationship Management (CRM) · Talent Pipelining.
+          </div>
+        </article>
+
+        <!-- Case Study 3: Remote Onboarding & Contractor Compliance -->
+        <article class="p-8 md:p-10 rounded-2xl bg-brand-cream border border-brand-border shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border pb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-brand-charcoal text-white">Case Study 03</span>
+                <span class="text-xs font-semibold text-brand-accent bg-brand-accentLight px-2.5 py-1 rounded border border-brand-accent/20">Remote People Operations</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-brand-charcoal mt-2">
+                30-60-90 Day Remote Onboarding & Contractor Lifecycle
+              </h3>
+              <p class="text-sm text-brand-muted mt-1">Standardizing Cross-Border Workflows for Global Distributed Staff</p>
+            </div>
+            <div class="text-left md:text-right">
+              <span class="text-xs font-medium text-brand-muted block">Role & Scope</span>
+              <span class="text-xs font-bold text-brand-charcoal">People Operations Lead</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                <span>The Onboarding Friction</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Newly contracted remote employees experienced delays in tool provisioning, inconsistent orientation agendas, and prolonged ramp-up periods to full productivity, leading to early frustration and administrative overhead for managers.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-brand-charcoal flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>The Systematic Solution</span>
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Created a standardized 30-60-90 day onboarding framework built into Notion and automated Slack workflows. Integrated automated identity compliance, equipment readiness checklists, orientation buddy pairing, and scheduled 30-day feedback check-ins.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-brand-border">
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">100%</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Day-One Tool Readiness</p>
+              <p class="text-xs text-brand-muted mt-0.5">Automated provisioning ensured zero first-week downtime for remote new hires.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">96%</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Onboarding eNPS</p>
+              <p class="text-xs text-brand-muted mt-0.5">High satisfaction scores recorded in 30-day post-onboarding employee pulse surveys.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-brand-border">
+              <p class="text-2xl font-black text-brand-accent">Zero</p>
+              <p class="text-xs text-brand-charcoal font-semibold mt-1">Compliance Discrepancies</p>
+              <p class="text-xs text-brand-muted mt-0.5">Standardized contractor agreements and tax filings across all active global jurisdictions.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Mastered HR & Talent Tech Stack -->
+    <section id="stack" class="py-20 bg-brand-cream">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <div class="max-w-2xl space-y-3">
+          <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Systems & Infrastructure</p>
+          <h2 class="text-3xl font-extrabold text-brand-charcoal tracking-tight">
+            Mastered Tech Stack & Tooling
+          </h2>
+          <p class="text-brand-muted text-sm leading-relaxed">
+            Platforms and tools I leverage daily to run modern remote recruiting funnels and people operations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Stack Column 1 -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-accentLight text-brand-accent flex items-center justify-center font-bold text-base">
+              TA
+            </div>
+            <h3 class="text-base font-bold text-brand-charcoal">Talent Acquisition & Sourcing</h3>
+            <ul class="space-y-2 text-xs text-brand-muted">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">ATS:</strong> Ashby, Greenhouse, Lever</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Sourcing:</strong> LinkedIn Recruiter, Boolean Search, GitHub</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Pipeline:</strong> Structured Candidate CRM & Nurturing</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Evaluation:</strong> Role-Based Rubrics & Scorecards</li>
+            </ul>
+          </div>
+
+          <!-- Stack Column 2 -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-accentLight text-brand-accent flex items-center justify-center font-bold text-base">
+              HR
+            </div>
+            <h3 class="text-base font-bold text-brand-charcoal">HRIS, Payroll & Global EOR</h3>
+            <ul class="space-y-2 text-xs text-brand-muted">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">EOR & Payroll:</strong> Deel, Rippling, Remote, Gusto</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">HRIS:</strong> BambooHR, Custom Cloud Systems</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Time & Leave:</strong> API Time Tracking, Accrual Engines</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Compliance:</strong> Cross-Border Contractor Documentation</li>
+            </ul>
+          </div>
+
+          <!-- Stack Column 3 -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-accentLight text-brand-accent flex items-center justify-center font-bold text-base">
+              OPS
+            </div>
+            <h3 class="text-base font-bold text-brand-charcoal">Workplace Ops & Automation</h3>
+            <ul class="space-y-2 text-xs text-brand-muted">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Workspaces:</strong> Notion Wiki, Google Workspace</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Automation:</strong> Slack Workflows, Airtable, Zapier</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Analytics:</strong> People Metrics, Headcount Forecasting</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span><strong class="text-brand-charcoal">Lifecycle:</strong> 30-60-90 Day Performance Frameworks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="py-20 bg-white border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <div class="max-w-2xl space-y-3">
+          <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Chronological Track Record</p>
+          <h2 class="text-3xl font-extrabold text-brand-charcoal tracking-tight">
+            Professional Experience: From Execution to Leadership
+          </h2>
+          <p class="text-brand-muted text-sm leading-relaxed">
+            15 years of continuous, progressively senior experience across high-growth startups and global enterprise institutions.
+          </p>
+        </div>
+
+        <div class="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-brand-border">
+          
+          <!-- Role 1 -->
+          <div class="relative pl-10 space-y-2">
+            <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-accent border-4 border-white"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+              <h3 class="text-lg font-bold text-brand-charcoal">HR Operations & Talent Acquisition Manager</h3>
+              <span class="text-xs font-bold text-brand-accent bg-brand-accentLight px-2.5 py-1 rounded w-fit mt-1 sm:mt-0">2025 – Present</span>
+            </div>
+            <p class="text-xs font-semibold text-brand-muted">Chargeflow, Inc. · Remote Global</p>
+            <ul class="text-xs text-brand-muted space-y-1.5 pt-2 list-disc pl-4">
+              <li>Lead end-to-end people operations and talent acquisition for an 80+ member global remote workforce spanning the US, APAC, and EMEA.</li>
+              <li>Architected and implemented a custom cloud HRIS connecting daily attendance, leave approvals, shift scheduling, and payroll export routines.</li>
+              <li>Partner directly with executive leadership on workforce planning, compensation benchmarking, performance management, and employee retention strategies.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="relative pl-10 space-y-2">
+            <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-charcoal border-4 border-white"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+              <h3 class="text-lg font-bold text-brand-charcoal">Talent Acquisition Lead</h3>
+              <span class="text-xs font-bold text-brand-charcoal bg-brand-cream px-2.5 py-1 rounded border border-brand-border w-fit mt-1 sm:mt-0">2023 – 2025</span>
+            </div>
+            <p class="text-xs font-semibold text-brand-muted">55 KNOTS · Global Creative & Technical Teams</p>
+            <ul class="text-xs text-brand-muted space-y-1.5 pt-2 list-disc pl-4">
+              <li>Owned full-lifecycle recruitment across high-volume creative, marketing, and technical positions, maintaining a 24-day time-to-fill.</li>
+              <li>Built predictable candidate pipelines and structured screening loops in the ATS, improving offer acceptance to 94%.</li>
+              <li>Collaborated with hiring managers to standardize technical evaluations and enhance candidate experience across all touchpoints.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="relative pl-10 space-y-2">
+            <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-charcoal border-4 border-white"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+              <h3 class="text-lg font-bold text-brand-charcoal">Talent Partner</h3>
+              <span class="text-xs font-bold text-brand-charcoal bg-brand-cream px-2.5 py-1 rounded border border-brand-border w-fit mt-1 sm:mt-0">2018 – 2023</span>
+            </div>
+            <p class="text-xs font-semibold text-brand-muted">Bluestone Servicing · Professional Services</p>
+            <ul class="text-xs text-brand-muted space-y-1.5 pt-2 list-disc pl-4">
+              <li>Managed high-volume recruiting operations and candidate onboarding across shared services and operations business units.</li>
+              <li>Optimized the Applicant Tracking System (ATS), standardized structured interview rubrics, and reduced candidate drop-off.</li>
+              <li>Analyzed hiring metrics and talent market trends to guide executive hiring forecasts and salary range benchmarking.</li>
+            </ul>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="relative pl-10 space-y-2">
+            <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-charcoal border-4 border-white"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+              <h3 class="text-lg font-bold text-brand-charcoal">HR Specialist</h3>
+              <span class="text-xs font-bold text-brand-charcoal bg-brand-cream px-2.5 py-1 rounded border border-brand-border w-fit mt-1 sm:mt-0">2010 – 2017</span>
+            </div>
+            <p class="text-xs font-semibold text-brand-muted">JPMorgan Chase & Co. · Global Financial Services</p>
+            <ul class="text-xs text-brand-muted space-y-1.5 pt-2 list-disc pl-4">
+              <li>Built foundational HR capabilities across recruitment operations, employee onboarding, employee relations, and performance appraisal cycles.</li>
+              <li>Delivered orientation and engagement programs for large cohorts of corporate hires, maintaining strict adherence to enterprise compliance standards.</li>
+              <li>Supported business unit heads with employee engagement initiatives, internal mobility processing, and HR policy guidance.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials with Category Filtering -->
+    <section id="testimonials" class="py-20 bg-brand-cream border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="max-w-xl space-y-3">
+            <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Social Proof & Peer Endorsements</p>
+            <h2 class="text-3xl font-extrabold text-brand-charcoal tracking-tight">
+              Trusted by Founders, Hiring Managers & Teams
+            </h2>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              11 verified recommendations from colleagues, executives, and candidates reflecting my work ethic, sourcing rigor, and collaborative leadership.
+            </p>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap gap-2" id="testimonialFilter">
+            <button class="test-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-charcoal text-white transition-all shadow-sm" data-filter="all">All (11)</button>
+            <button class="test-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-brand-muted hover:text-brand-charcoal border border-brand-border transition-all" data-filter="ta">Talent Acquisition</button>
+            <button class="test-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-brand-muted hover:text-brand-charcoal border border-brand-border transition-all" data-filter="ops">HR Operations & Leadership</button>
+          </div>
+        </div>
+
+        <!-- Testimonials Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsGrid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ops">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen has been exceptional in managing all our hiring and HR needs. He is consistently efficient and proactive in sourcing talent that aligns perfectly with our requirements, and he plays a critical role in overseeing the talent he brings in.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Aamir Manasawala</p>
+              <p class="text-[11px] text-brand-accent font-medium">CEO, JAD Holdings Pte Ltd</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “I hired Zen as a Talent Acquisition Partner and, hand on heart, this has been the best decision I have made. His intrinsic motivation, initiative, grit, growth mindset, and results set him apart.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Maria Shevelev</p>
+              <p class="text-[11px] text-brand-accent font-medium">Senior Talent Acquisition Consultant</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen filled our existing creative vacancies and built an ongoing pool of candidates. He is helpful, ready to improve, and genuinely cares about candidates as well as targets.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Lia Carvalho</p>
+              <p class="text-[11px] text-brand-accent font-medium">Business Operations Director</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ops">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen is a true standout in Talent Acquisition. His ability to spot and attract top-tier candidates, understand organizational needs, and collaborate with hiring managers made an undeniable impact.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Kurt Thomas Gorriceta Himatay</p>
+              <p class="text-[11px] text-brand-accent font-medium">Country Head & People Leader</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen is very dedicated and easy to work with. He goes over and beyond his role to make the hiring process easier for hiring managers. I highly recommend Zen for Talent Acquisition roles.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Hari Kumar Subramanyam</p>
+              <p class="text-[11px] text-brand-accent font-medium">Testing & QA Leader</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ops">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen demonstrates perseverance and makes sure to meet his deliverables on time. He is open to feedback, has an eye to be an HR practitioner, and will excel in his chosen field.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Charmaine Ual, CPHR</p>
+              <p class="text-[11px] text-brand-accent font-medium">HR Operations & Business Partnering</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “His exceptional ability to identify and engage top-tier talent, strategic approach to recruitment, communication skills, and commitment to positive candidate experiences make him a valuable asset.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Michelle Labustro</p>
+              <p class="text-[11px] text-brand-accent font-medium">Marketing Project Manager & Content Creator</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 8 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ops">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen's transition to a lead role allowed him to unlock his complete potential, showcasing exceptional creative and analytical talents. I'm genuinely delighted by his achievements.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Janice Byl Peque</p>
+              <p class="text-[11px] text-brand-accent font-medium">Team Lead</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 9 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “I worked with Zen at 55 Knots, and he was exceptionally approachable and friendly, making the recruitment process smooth and pleasant.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Mharlee Mae Cabalquinto</p>
+              <p class="text-[11px] text-brand-accent font-medium">Creative Multimedia Designer</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 10 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ta">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “Zen is a wonder to work with. He guided me when I was new with the company and was exceptionally kind with how he handled situations. He's very approachable and has an excellent work ethic.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Isabel T-1 Mecaeller</p>
+              <p class="text-[11px] text-brand-accent font-medium">Marketing & Advertising Creative</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 11 -->
+          <div class="testimonial-card p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4 flex flex-col justify-between" data-category="ops">
+            <p class="text-xs text-brand-muted leading-relaxed italic">
+              “I highly recommend Zen for his approachable nature, exceptional work ethic, insightful guidance, consistent updates, and kind demeanor. He fosters a positive and collaborative atmosphere.”
+            </p>
+            <div class="pt-4 border-t border-brand-border/60">
+              <p class="text-xs font-bold text-brand-charcoal">Jennifer Tingson, MBA, RCA, CB</p>
+              <p class="text-[11px] text-brand-accent font-medium">Accountant / Internal Audit Officer</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with Career Context -->
+    <section id="about" class="py-20 bg-white border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <div class="lg:col-span-4 space-y-4">
+            <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Philosophy & Background</p>
+            <h2 class="text-3xl font-extrabold text-brand-charcoal tracking-tight">
+              People, Processes & Trust
+            </h2>
+            <div class="p-5 rounded-2xl bg-brand-cream border border-brand-border space-y-3">
+              <p class="text-xs font-bold text-brand-charcoal uppercase tracking-wider">Hiring Manager Context</p>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                <strong class="text-brand-charcoal">Career Timeline Note:</strong> I began my career in foundational corporate HR and high-volume recruiting at JPMorgan Chase (2010–2017) and Bluestone (2018–2023). While actively managing people operations, I deliberately formalized my academic qualifications in Business Administration (BSBA, San Sebastian College, 2021–2025) and completed specialized HRCI credentials to deepen my strategic business management capabilities.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 space-y-6 text-sm text-brand-muted leading-relaxed">
+            <p class="text-base text-brand-charcoal font-medium">
+              I bridge the critical gap between attracting top-tier global talent and architecting the operational infrastructure required to retain, develop, and coordinate them.
+            </p>
+            <p>
+              Over the past 15 years, I have navigated both enterprise environments and rapid-growth remote startups. At JPMorgan Chase, I learned the discipline of compliance, structured onboarding, and large-scale employee engagement. In fast-paced scale-ups like 55 KNOTS and Chargeflow, I translated that rigor into agile, lightweight people systems—building candidate pipelines that fill roles in 24 days and deploying custom HRIS workflows that eliminate 90% of manual admin.
+            </p>
+            <p>
+              My approach is fundamentally pragmatic: understand the core operational bottleneck, make expectations crystal clear through structured workflows, and equip distributed team members and hiring managers with self-service tools so they can operate autonomously.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-brand-border">
+              <div class="p-4 rounded-xl bg-brand-cream/70 border border-brand-border/60">
+                <h4 class="text-xs font-bold text-brand-charcoal uppercase tracking-wider mb-1">Distributed Culture</h4>
+                <p class="text-xs text-brand-muted">Advocate for asynchronous documentation, radical clarity in expectations, and transparent feedback loops across US, APAC, and European time zones.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-brand-cream/70 border border-brand-border/60">
+                <h4 class="text-xs font-bold text-brand-charcoal uppercase tracking-wider mb-1">Continuous Development</h4>
+                <p class="text-xs text-brand-muted">Committed to regular upskilling in labor compliance, international contractor regulations, total rewards, and modern HR tech automation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Credentials, Assessments & Certifications -->
+    <section id="credentials" class="py-20 bg-brand-cream border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <div class="max-w-2xl space-y-3">
+          <p class="text-brand-accent font-bold text-xs uppercase tracking-widest">Verified Credentials & Assessments</p>
+          <h2 class="text-3xl font-extrabold text-brand-charcoal tracking-tight">
+            Academic Background & Specialized Certifications
+          </h2>
+          <p class="text-brand-muted text-sm leading-relaxed">
+            Formal education, global language benchmarks, and professional HRCI lifecycle credentials.
+          </p>
+        </div>
+
+        <!-- Education & Core Language Benchmarks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Education Card -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Formal Education</span>
+            <div class="space-y-3">
+              <div>
+                <p class="text-sm font-bold text-brand-charcoal">BS Business Administration</p>
+                <p class="text-xs text-brand-muted">Business Management · 2021 – 2025</p>
+                <p class="text-xs text-brand-charcoal font-medium mt-0.5">San Sebastian College - Recoletos de Manila</p>
+              </div>
+              <div class="pt-2 border-t border-brand-border/60">
+                <p class="text-sm font-bold text-brand-charcoal">BA Fashion Design & Marketing</p>
+                <p class="text-xs text-brand-muted">2016 – 2020</p>
+                <p class="text-xs text-brand-charcoal font-medium mt-0.5">SoFA Design Institute</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- English Language Proficiency -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Global Communication</span>
+            <div class="space-y-3">
+              <div>
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-bold text-brand-charcoal">SmallTalk English Test</p>
+                  <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">C2 Proficient</span>
+                </div>
+                <p class="text-xs text-brand-muted mt-1">Verified near-native fluency in professional business English (Issued Feb 2025).</p>
+                <a href="https://app.smalltalk2.me/cert/aa5433dd" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-accent hover:underline inline-block mt-1">
+                  View Certificate ↗
+                </a>
+              </div>
+              <div class="pt-2 border-t border-brand-border/60">
+                <p class="text-sm font-bold text-brand-charcoal">IELTS Academic Test</p>
+                <p class="text-xs text-brand-muted">International English Language Testing System benchmark.</p>
+                <a href="https://drive.google.com/file/d/1vh8yOIVv388aTKe7O4PHzIgzAoQg16ZS/view" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-accent hover:underline inline-block mt-1">
+                  View Score Report ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work Style & DISC -->
+          <div class="p-6 bg-white rounded-2xl border border-brand-border shadow-sm space-y-4">
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Leadership Dynamics</span>
+            <div class="space-y-3">
+              <div>
+                <p class="text-sm font-bold text-brand-charcoal">DISC Profile Assessment</p>
+                <p class="text-xs text-brand-muted mt-1">Evaluated communication style, stakeholder management, and cross-functional team dynamics.</p>
+                <a href="https://drive.google.com/file/d/1ULTmybjAsAungeHCyPT9H8CtJFfA9Br3/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-accent hover:underline inline-block mt-2">
+                  View Assessment Report ↗
+                </a>
+              </div>
+              <div class="p-2.5 rounded-lg bg-brand-cream/80 text-[11px] text-brand-muted border border-brand-border/60">
+                Balances Steadiness (empathetic team listening) with Conscientiousness (precise operational data).
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 10 HRCI & Lifecycle Certificates (Collapsible Accordion) -->
+        <div class="bg-white rounded-2xl border border-brand-border shadow-sm p-6 md:p-8 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-brand-charcoal">Professional HR Certifications & Specializations</h3>
+              <p class="text-xs text-brand-muted">HRCI and Coursera verified credentials covering the complete employee lifecycle.</p>
+            </div>
+            <button id="toggleCertsBtn" class="px-4 py-2 text-xs font-bold rounded-lg border border-brand-border bg-brand-cream hover:bg-white text-brand-charcoal transition-all flex items-center gap-1.5 self-start sm:self-auto">
+              <span id="toggleCertsText">View All 10 Credentials</span>
+              <svg id="toggleCertsIcon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+          </div>
+
+          <!-- Highlight Badges (Always Visible) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="p-3 rounded-xl bg-brand-cream/60 border border-brand-border/60">
+              <span class="text-[10px] font-bold text-brand-accent uppercase">HRCI Certified</span>
+              <p class="text-xs font-bold text-brand-charcoal mt-0.5">Human Resource Associate Specialization</p>
+              <p class="text-[11px] text-brand-muted">Credential ID: 4VR7426LGUUZ (Jun 2024)</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/60 border border-brand-border/60">
+              <span class="text-[10px] font-bold text-brand-accent uppercase">Lifecycle Module</span>
+              <p class="text-xs font-bold text-brand-charcoal mt-0.5">Compensation and Benefits</p>
+              <p class="text-[11px] text-brand-muted">Credential ID: 5EM5R8MM8W4Z (Jun 2024)</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/60 border border-brand-border/60">
+              <span class="text-[10px] font-bold text-brand-accent uppercase">Lifecycle Module</span>
+              <p class="text-xs font-bold text-brand-charcoal mt-0.5">Talent Acquisition & Sourcing</p>
+              <p class="text-[11px] text-brand-muted">Credential ID: TWMPKNCLJ4TF (Jun 2024)</p>
+            </div>
+          </div>
+
+          <!-- Extended List (Collapsible) -->
+          <div id="extendedCerts" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-4 border-t border-brand-border">
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Employee Relations</p>
+              <p class="text-[11px] text-brand-muted">ID: AQZSNFL26RN7 · Jun 2024</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Learning and Development</p>
+              <p class="text-[11px] text-brand-muted">ID: LH5TLYJMDXH3 · Jun 2024</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Managing Employee Compensation</p>
+              <p class="text-[11px] text-brand-muted">ID: WS8PTPEM3M6G · Sep 2023</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Managing Employee Performance</p>
+              <p class="text-[11px] text-brand-muted">ID: UJPD4DUCWPM2 · Sep 2023</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Preparing to Manage Human Resources</p>
+              <p class="text-[11px] text-brand-muted">ID: 8SV55SRY4JKM · Jul 2023</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">Recruiting, Hiring & Onboarding</p>
+              <p class="text-[11px] text-brand-muted">ID: DGAEHR3GW9QN · Apr 2023</p>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-cream/40 border border-brand-border/40">
+              <p class="text-xs font-bold text-brand-charcoal">HRM Capstone: HR for People Managers</p>
+              <p class="text-[11px] text-brand-muted">ID: ZUKNJSQCUHT8 · Nov 2023</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Direct Call Scheduling CTA Section -->
+    <section id="contact" class="py-20 bg-brand-accent text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+        <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-white font-semibold text-xs tracking-wider uppercase">
+          Ready to Connect
+        </span>
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Building a high-growth remote team that requires clarity?
+        </h2>
+        <p class="text-white/90 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+          Let’s discuss your current hiring priorities, cross-border contractor operations, or how to eliminate manual bottlenecks with custom HR workflows.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+          <button id="bookCallBtnFooter" class="px-8 py-3.5 rounded-xl bg-white text-brand-accent font-bold text-sm hover:bg-brand-cream transition-all shadow-lg flex items-center gap-2">
+            <span>Schedule a 20-Min Intro Call</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </button>
+          <a href="mailto:patriarcazen@gmail.com" class="px-8 py-3.5 rounded-xl bg-brand-charcoal text-white font-bold text-sm hover:bg-black transition-all shadow-lg flex items-center gap-2">
+            <span>Email Me Directly</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zenpatriarca/" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-xl border border-white/40 text-white font-bold text-sm hover:bg-white/10 transition-all flex items-center gap-2">
+            <span>LinkedIn Profile ↗</span>
+          </a>
+        </div>
+
+        <div class="pt-8 text-white/70 text-xs">
+          Angeles City, Pampanga, Philippines · Open to Worldwide Distributed Opportunities · © 2026 Zen Patriarca
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Calendar Scheduling Modal (In-Page Fallback) -->
+  <div id="bookingModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 md:p-8 space-y-6 shadow-2xl border border-brand-border relative">
+      <button id="closeModalBtn" class="absolute top-4 right-4 text-brand-muted hover:text-brand-charcoal p-1 rounded-lg" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <div class="space-y-2">
+        <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Direct Intro Call</span>
+        <h3 class="text-xl font-bold text-brand-charcoal">Schedule a Conversation with Zen</h3>
+        <p class="text-xs text-brand-muted">Select an area you would like to explore during our 20-minute discussion.</p>
+      </div>
+
+      <div class="space-y-3">
+        <label class="block text-xs font-semibold text-brand-charcoal">Discussion Topic</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+          <label class="p-3 rounded-lg border border-brand-border flex items-center gap-2 cursor-pointer hover:border-brand-accent bg-brand-cream/40">
+            <input type="radio" name="topic" value="hiring" checked class="text-brand-accent focus:ring-brand-accent">
+            <span>Talent Acquisition Lead Role</span>
+          </label>
+          <label class="p-3 rounded-lg border border-brand-border flex items-center gap-2 cursor-pointer hover:border-brand-accent bg-brand-cream/40">
+            <input type="radio" name="topic" value="peoplesys" class="text-brand-accent focus:ring-brand-accent">
+            <span>HR Operations / People Systems</span>
+          </label>
+          <label class="p-3 rounded-lg border border-brand-border flex items-center gap-2 cursor-pointer hover:border-brand-accent bg-brand-cream/40">
+            <input type="radio" name="topic" value="contractor" class="text-brand-accent focus:ring-brand-accent">
+            <span>Contractor & Remote Setup</span>
+          </label>
+          <label class="p-3 rounded-lg border border-brand-border flex items-center gap-2 cursor-pointer hover:border-brand-accent bg-brand-cream/40">
+            <input type="radio" name="topic" value="general" class="text-brand-accent focus:ring-brand-accent">
+            <span>General Hiring Inquiry</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <label for="contactEmailInput" class="block text-xs font-semibold text-brand-charcoal">Your Work Email</label>
+        <input type="email" id="contactEmailInput" placeholder="recruiter@company.com" class="w-full px-3.5 py-2 text-xs rounded-lg border border-brand-border focus:outline-none focus:border-brand-accent">
+      </div>
+
+      <div class="pt-2 flex items-center gap-3">
+        <a id="confirmBookingBtn" href="mailto:patriarcazen@gmail.com?subject=Screening%20Call%20Request%20-%20Zen%20Patriarca" class="flex-1 py-3 text-center text-xs font-bold rounded-xl bg-brand-accent text-white hover:bg-brand-accentHover transition-all shadow-md">
+          Continue to Email Dispatch ↗
+        </a>
+        <button id="cancelModalBtn" class="px-4 py-3 text-xs font-semibold rounded-xl border border-brand-border text-brand-muted hover:text-brand-charcoal">
+          Cancel
+        </button>
+      </div>
+
+      <p class="text-[11px] text-brand-muted text-center">
+        Prefer direct email? Reach Zen at <a href="mailto:patriarcazen@gmail.com" class="text-brand-accent underline">patriarcazen@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Module descriptions data for Case Study 1
+    const moduleDetails = [
+      {
+        title: "Central Dashboard & Operational Visibility",
+        desc: "Provides real-time visibility into active on-duty remote team members, pending time/leave approvals, schedule conflicts, and payroll preparation status for executive stakeholders."
+      },
+      {
+        title: "Time Tracking & Automatic Calculation",
+        desc: "Enables daily hour logging with automatic breakdown of regular hours, approved overtime, weekend shifts, and regional public holidays, feeding directly into audit records."
+      },
+      {
+        title: "Leave Management & Accrual Engine",
+        desc: "Structured balance allocation, policy-restricted annual/sick leave applications, multi-tier team visibility limits, and zero-conflict coverage checks."
+      },
+      {
+        title: "Team Shift Scheduler & Coverage Planning",
+        desc: "Empowers department leads to map weekly shift rotations, designate rest days, and approve contractor shift swaps with automated notification triggers."
+      },
+      {
+        title: "Approvals Engine & Bottleneck Elimination",
+        desc: "Centralized approval hub routing timesheet corrections and leave requests with role-based access to cut administrative turnaround times."
+      },
+      {
+        title: "Reporting Analytics & Automated Payroll Export",
+        desc: "Generates export-ready CSV pipelines pre-formatted for Deel and Gusto, providing payroll audits and executive workforce distribution metrics."
+      }
+    ];
+
+    // Module button click handlers
+    const moduleBtns = document.querySelectorAll('.module-btn');
+    const moduleDetailEl = document.getElementById('moduleDetail');
+
+    moduleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.getAttribute('data-mod'));
+        moduleBtns.forEach(b => {
+          b.classList.remove('border-brand-accent', 'bg-white');
+          b.classList.add('border-brand-border', 'bg-white/70');
+          b.querySelector('span:first-child').classList.remove('text-brand-accent');
+          b.querySelector('span:first-child').classList.add('text-brand-muted');
+        });
+
+        btn.classList.add('border-brand-accent', 'bg-white');
+        btn.classList.remove('border-brand-border', 'bg-white/70');
+        btn.querySelector('span:first-child').classList.add('text-brand-accent');
+        btn.querySelector('span:first-child').classList.remove('text-brand-muted');
+
+        moduleDetailEl.innerHTML = '<strong class="text-brand-charcoal block mb-1">' + moduleDetails[idx].title + '</strong>' + moduleDetails[idx].desc;
+      });
+    });
+
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on anchor click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Testimonials Filtering
+    const testFilterBtns = document.querySelectorAll('.test-filter-btn');
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+    testFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        testFilterBtns.forEach(b => {
+          b.classList.remove('bg-brand-charcoal', 'text-white');
+          b.classList.add('bg-white', 'text-brand-muted');
+        });
+        btn.classList.add('bg-brand-charcoal', 'text-white');
+        btn.classList.remove('bg-white', 'text-brand-muted');
+
+        testimonialCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Collapsible Certificates
+    const toggleCertsBtn = document.getElementById('toggleCertsBtn');
+    const extendedCerts = document.getElementById('extendedCerts');
+    const toggleCertsText = document.getElementById('toggleCertsText');
+    const toggleCertsIcon = document.getElementById('toggleCertsIcon');
+
+    toggleCertsBtn.addEventListener('click', () => {
+      extendedCerts.classList.toggle('hidden');
+      if (extendedCerts.classList.contains('hidden')) {
+        toggleCertsText.textContent = 'View All 10 Credentials';
+        toggleCertsIcon.style.transform = 'rotate(0deg)';
+      } else {
+        toggleCertsText.textContent = 'Hide Extended Credentials';
+        toggleCertsIcon.style.transform = 'rotate(180deg)';
+      }
+    });
+
+    // Booking Modal Handlers
+    const bookingModal = document.getElementById('bookingModal');
+    const bookCallBtns = [
+      document.getElementById('bookCallBtnNav'),
+      document.getElementById('bookCallBtnMobile'),
+      document.getElementById('bookCallBtnHero'),
+      document.getElementById('bookCallBtnFooter')
+    ];
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const cancelModalBtn = document.getElementById('cancelModalBtn');
+
+    bookCallBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          bookingModal.classList.remove('hidden');
+        });
+      }
+    });
+
+    [closeModalBtn, cancelModalBtn].forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          bookingModal.classList.add('hidden');
+        });
+      }
+    });
+
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        bookingModal.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
